@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Admin | Cricvexa</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="admin-login" id="loginBox">
+  <h2>Admin Login</h2>
+  <input type="password" id="password" placeholder="Enter password" />
+  <button onclick="login()">Login</button>
+</div>
+
+<div class="admin-panel hidden" id="panel">
+  <h2>Add Image</h2>
+  <input type="text" id="title" placeholder="Image Title">
+  <input type="text" id="fileid" placeholder="Google Drive File ID">
+  <button onclick="addImage()">Add Image</button>
+
+  <p class="note">
+    Upload image to Google Drive → Share → Anyone with link → Viewer
+  </p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
